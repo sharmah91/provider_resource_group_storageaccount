@@ -18,11 +18,6 @@ resource "azurerm_resource_group" "rg1" {
   location = "East US"
 }
 
-resource "azurerm_resource_group" "rg2" {
-  name     = "RH_Hitesh_2"
-  location = "East US"
-}
-
 resource "azurerm_storage_account" "stg" {
   name                     = "behenchodstorage"
   resource_group_name      = azurerm_resource_group.rg.name

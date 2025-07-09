@@ -13,8 +13,13 @@ provider "azurerm" {
   subscription_id = "6f89d107-0df7-4bf9-9a60-43a792310639"
 }
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg1" {
   name     = "RH_Hitesh_1"
+  location = "East US"
+}
+
+resource "azurerm_resource_group" "rg2" {
+  name     = "RH_Hitesh_2"
   location = "East US"
 }
 
